@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #HW02.
+ b. File Name : activity_create_task.xml (layout/activity_create_task.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".CreateTaskActivity">
+
+    <TextView
+        android:id="@+id/createTaskNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label"
+        android:textAllCaps="false"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/enterTaskName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731" />
+
+    <EditText
+        android:id="@+id/enterTaskName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="@string/name_hint"
+        android:autofillHints="@string/name_hint"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/tertiary_text_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/createTaskNameLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/createDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="27dp"
+        android:text="@string/date_label"
+        android:textAllCaps="false"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/setDate"
+        app:layout_constraintEnd_toStartOf="@+id/setDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/setDate" />
+
+    <TextView
+        android:id="@+id/priorityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/priority_label"
+        android:textAllCaps="false"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createDateLabel" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priorityLabel">
+
+        <RadioButton
+            android:id="@+id/highButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:checked="true"
+            android:text="@string/high"
+            android:textAllCaps="false"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/mediumButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/medium"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/lowButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="@string/low"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/submitButton" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:padding="13dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/submit"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/setDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="13dp"
+        android:text="@string/set_date"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/enterTaskName"
+        app:layout_constraintTop_toBottomOf="@+id/enterTaskName" />
+
+    <TextView
+        android:id="@+id/setDate"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="10dp"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/setDateButton"
+        app:layout_constraintEnd_toStartOf="@+id/setDateButton"
+        app:layout_constraintStart_toStartOf="@+id/enterTaskName"
+        app:layout_constraintTop_toTopOf="@+id/setDateButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<!--
+ a. Assignment : #HW01.
+ b. File Name : strings.xml (values/strings.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="bill_label">Bill Total:</string>
+    <string name="tip_label">Tip%:</string>
+    <string name="custom_label">Custom:</string>
+    <string name="tip_result_label">Tip:</string>
+    <string name="total_label">Total:</string>
+    <string name="bill_hint">Enter Bill Value</string>
+    <string name="radio_1">10%</string>
+    <string name="radio_2">15%</string>
+    <string name="radio_3">18%</string>
+    <string name="custom_radio">Custom</string>
+    <string name="exit">Exit</string>
+    <string name="slider_value">20%</string>
+</resources>

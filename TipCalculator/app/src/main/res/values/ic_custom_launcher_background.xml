@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #HW01.
+ b. File Name : ic_custom_launcher_background.xml (values/ic_custom_launcher_background.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<resources>
+    <color name="ic_custom_launcher_background">#EFEFEF</color>
+</resources>

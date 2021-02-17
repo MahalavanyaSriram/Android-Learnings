@@ -1,0 +1,35 @@
+<!--
+ a. Assignment : #03.
+ b. File Name : strings.xml (values/strings.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<resources>
+    <string name="app_name">In Class 03</string>
+    <string name="mainActivity_name">Registration</string>
+    <string name="deptActivity_name">Department</string>
+    <string name="profileActivity_name">Profile</string>
+    <string name="name_label">Name:</string>
+    <string name="email_label">Email:</string>
+    <string name="id_label">ID:</string>
+    <string name="dept_label">Dept:</string>
+    <string name="select_button">Select</string>
+    <string name="submit_button">Submit</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="id_hint">Enter ID</string>
+    <string name="radio_1">Computer Science</string>
+    <string name="radio_2">Software Info. Systems</string>
+    <string name="radio_3">Bio Informatics</string>
+    <string name="radio_4">Data Science</string>
+    <string name="cancel_button">Cancel</string>
+    <string name="name_empty_toast">Name cannot be empty</string>
+    <string name="name_invalid_toast">Not a valid name</string>
+    <string name="email_invalid_toast">Not a valid email</string>
+    <string name="email_empty_toast">Email cannot be empty</string>
+    <string name="id_empty_toast">Id cannot be empty</string>
+    <string name="deparment_empty_toast">Department cannot be empty</string>
+    <string name="deparment_nochange">No department selected</string>
+    <string name="deparment_selected_retained">No change in selected department</string>
+
+</resources>

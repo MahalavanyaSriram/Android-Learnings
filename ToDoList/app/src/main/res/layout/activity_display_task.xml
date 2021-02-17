@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #HW02.
+ b. File Name : activity_display_task.xml (layout/activity_display_task.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".DisplayTaskActivity">
+
+    <TextView
+        android:id="@+id/taskList"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/task_information_label"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayNameLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/name_label"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/displayName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayName" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/displayNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/taskList" />
+
+    <TextView
+        android:id="@+id/displayDateLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/date_label"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/displayDate"
+        app:layout_constraintEnd_toStartOf="@+id/displayDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayDate" />
+
+    <TextView
+        android:id="@+id/displayPriorityLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/priority_label"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/displayPriority"
+        app:layout_constraintEnd_toStartOf="@+id/displayPriority"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayPriority" />
+
+    <TextView
+        android:id="@+id/displayDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/displayName"
+        app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+    <TextView
+        android:id="@+id/displayPriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/displayDate"
+        app:layout_constraintTop_toBottomOf="@+id/displayDate" />
+
+    <Button
+        android:id="@+id/displayCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="13dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/cancel"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/displayDeleteButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayDeleteButton" />
+
+    <Button
+        android:id="@+id/displayDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="13dp"
+        android:padding="13dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/delete"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayPriority" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

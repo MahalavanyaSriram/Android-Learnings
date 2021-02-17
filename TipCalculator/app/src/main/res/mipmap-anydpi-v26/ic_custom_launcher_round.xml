@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #HW01.
+ b. File Name : ic_custom_launcher_round.xml (mipmap-anydpi-v26/ic_custom_launcher_round.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_custom_launcher_background"/>
+    <foreground android:drawable="@mipmap/ic_custom_launcher_foreground"/>
+</adaptive-icon>

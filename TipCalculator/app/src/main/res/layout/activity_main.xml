@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ a. Assignment : #HW01.
+ b. File Name : activity_main.xml (layout/activity_main.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/billTotalLabel"
+        android:layout_width="82dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/bill_label"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/userInput"
+        app:layout_constraintEnd_toEndOf="@+id/tipPercentLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/userInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/bill_hint"
+        android:inputType="numberDecimal"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/billTotalLabel"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="@string/bill_hint" />
+
+    <TextView
+        android:id="@+id/tipPercentLabel"
+        android:layout_width="76dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/tip_label"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/customLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billTotalLabel" />
+
+    <TextView
+        android:id="@+id/customLabel"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/custom_label"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tipLabel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipPercentLabel" />
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/total_label"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tipLabel"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tipLabel" />
+
+    <TextView
+        android:id="@+id/tipLabel"
+        android:layout_width="77dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="3dp"
+        android:text="@string/tip_result_label"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/tipResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customLabel"
+        android:layout_marginRight="3dp"
+        android:gravity="start" />
+
+    <TextView
+        android:id="@+id/tipResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tipLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/userInput"
+        app:layout_constraintTop_toBottomOf="@+id/userInput">
+
+        <RadioButton
+            android:id="@+id/tenPercent"
+            android:layout_width="67dp"
+            android:checked="true"
+            android:layout_height="match_parent"
+            android:text="@string/radio_1"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/fifteenPercent"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_2"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/eighteenPercent"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_3"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/customRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/custom_radio"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+        android:max="50"
+        android:progress="20"
+        app:layout_constraintEnd_toStartOf="@+id/sliderValue"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/totalResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/totalLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="@+id/tipResult"
+        app:layout_constraintTop_toBottomOf="@+id/tipResult"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:backgroundTint="?attr/colorButtonNormal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/totalResult" />
+
+    <TextView
+        android:id="@+id/sliderValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slider_value"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/seekBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/seekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
