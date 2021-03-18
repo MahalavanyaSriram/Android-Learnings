@@ -1,4 +1,4 @@
-# Android-Learnings
+# Android Learnings
 Implemented multiple apps for each feature in android
 
 ## Accounts
