@@ -11,7 +11,7 @@ Implemented multiple apps for each feature in android
 
 3. Contacts - This app consits of all the contacts of a person. One can edit, create, update and delete a contact.
 
-<img src="/Screenshots/Conatcts/1.png" width="20%">  <img src="/Screenshots/Conatcts/2.png" width="20%">  <img src="/Screenshots/Conatcts/3.png" width="20%">  <img src="/Screenshots/Conatcts/4.png" width="20%">  <img src="/Screenshots/Conatcts/5.png" width="20%">  <img src="/Screenshots/Conatcts/6.png" width="20%">  <img src="/Screenshots/Conatcts/7.png" width="20%">  <img src="/Screenshots/Conatcts/8.png" width="20%">
+<img src="/Screenshots/Contacts/1.png" width="20%">  <img src="/Screenshots/Contacts/2.png" width="20%">  <img src="/Screenshots/Contacts/3.png" width="20%">  <img src="/Screenshots/Contacts/4.png" width="20%">  <img src="/Screenshots/Contacts/5.png" width="20%">  <img src="/Screenshots/Contacts/6.png" width="20%">  <img src="/Screenshots/Contacts/7.png" width="20%">  <img src="/Screenshots/Contacts/8.png" width="20%">
 
 3. Forums - App allows you to login, create a forum, delete a forum you create, like and dislike forum of all and also add comments to forum.
 
