@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #07.
+ b. File Name : fragment_create.xml (layout/fragment_create.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/createLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".CreateFragment">
+
+    <EditText
+        android:id="@+id/createName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:autofillHints="@string/name_hint"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/blue_200"
+        android:textColorLink="@color/blue_800"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/blankImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/blankImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_person"
+        app:layout_constraintBottom_toBottomOf="@+id/createName"
+        app:layout_constraintEnd_toEndOf="@+id/displayEmailImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/createName"
+        android:contentDescription="@string/person" />
+
+    <ImageView
+        android:id="@+id/displayEmailImageView"
+        android:layout_width="52dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_dialog_email"
+        app:layout_constraintBottom_toBottomOf="@+id/createEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/createEmail"
+        app:tint="@color/dark_gray"
+        android:contentDescription="@string/email" />
+
+    <ImageView
+        android:id="@+id/displayPhoneImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:src="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="@+id/createPhone"
+        app:layout_constraintEnd_toEndOf="@+id/displayEmailImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/createPhone"
+        app:tint="@color/dark_gray"
+        android:contentDescription="@string/phone" />
+
+    <EditText
+        android:id="@+id/createEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/email_hint"
+        android:ems="10"
+        android:hint="@string/email_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/createName"
+        app:layout_constraintTop_toBottomOf="@+id/createName" />
+
+    <EditText
+        android:id="@+id/createPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/phone_hint"
+        android:ems="10"
+        android:hint="@string/phone_hint"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/createEmail"
+        app:layout_constraintTop_toBottomOf="@+id/createEmail" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/createPhone"
+        app:layout_constraintTop_toBottomOf="@+id/createPhone">
+
+        <RadioButton
+            android:id="@+id/cellRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cell"
+            android:checked="true"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:id="@+id/officeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/office" />
+
+        <RadioButton
+            android:id="@+id/homeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_800"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/submitButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/submitButton"
+     />
+
+    <Button
+        android:id="@+id/submitButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:backgroundTint="@android:color/transparent"
+        android:padding="0dp"
+        android:text="@string/submit"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_800"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

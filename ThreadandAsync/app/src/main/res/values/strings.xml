@@ -1,0 +1,20 @@
+<!-- 
+ a. Assignment : #06.
+ b. File Name : strings.xml (values/strings.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<resources>
+    <string name="app_name">Main Activity</string>
+    <string name="async">Generate Using AsyncTask</string>
+    <string name="thread">Generate Using Thread</string>
+    <string name="select_complexity_label">Select Complexity</string>
+    <string name="times_label">Times</string>
+    <string name="avg_label">Average:</string>
+    <string name="div">/</string>
+    <string name="thread_started">Thread Process Started</string>
+    <string name="thread_completed">Thread Process Completed</string>
+    <string name="async_started">Async Task Started</string>
+    <string name="async_completed">Async Task Completed</string>
+    <string name="select_complexity">Select Complexity of atleast 1</string>
+</resources>

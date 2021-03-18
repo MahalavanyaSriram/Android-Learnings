@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #07.
+ b. File Name : styles.xml (values/styles.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<resources>
+
+    <style name="AlertDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">#A60202</item>
+        <item name="android:textColorPrimary">#A60202</item>
+        <item name="android:colorAccent">#1b5e20</item>
+    </style>
+</resources>
+

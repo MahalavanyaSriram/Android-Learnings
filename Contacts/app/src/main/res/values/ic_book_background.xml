@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #07.
+ b. File Name : ic_book_background.xml (values/ic_book_background.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<resources>
+    <color name="ic_book_background">#ECECEC</color>
+</resources>

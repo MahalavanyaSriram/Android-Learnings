@@ -1,0 +1,26 @@
+<!--
+  a. Assignment : #05.
+  b. File Name : strings.xml (values/strings.xml).
+  c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+  -->
+
+<resources>
+    <string name="app_name">ITunesApp</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="create_button">Create New Account</string>
+    <string name="login_fragment_name">Login</string>
+    <string name="register_fragment_name">Register</string>
+    <string name="email_hint">Email</string>
+    <string name="register_success">Registration Successful</string>
+    <string name="password_hint">Password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="name_hint">Name</string>
+    <string name="welcome">Welcome </string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Log Out</string>
+    <string name="genres_label">Genres</string>
+    <string name="app_detail_fragment_name">App Details</string>
+    <string name="app_categories_fragment_name">App Categories</string>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : #07.
+ b. File Name : fragment_details.xml (layout/fragment_details.xml).
+ c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+ -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailsLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".DetailsFragment" >
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lines"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/displayEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/displayEmailImageView"
+        app:layout_constraintTop_toBottomOf="@+id/displayContactDetailLabel" />
+
+
+    <TextView
+        android:id="@+id/displayType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/displayPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/displayPhone"
+        app:layout_constraintTop_toTopOf="@+id/displayPhone" />
+
+    <TextView
+        android:id="@+id/displayPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/displayEmail"
+        app:layout_constraintTop_toBottomOf="@+id/displayEmail" />
+
+    <TextView
+        android:id="@+id/displayContactDetailLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/contact_detail"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayName" />
+
+    <ImageView
+        android:id="@+id/displayEmailImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_dialog_email"
+        app:layout_constraintBottom_toBottomOf="@+id/displayEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/displayContactDetailLabel"
+        app:tint="@color/dark_gray"
+        android:contentDescription="@string/email" />
+
+    <ImageView
+        android:id="@+id/displayPhoneImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:src="@android:drawable/stat_sys_phone_call"
+        app:layout_constraintBottom_toBottomOf="@+id/displayPhone"
+        app:layout_constraintEnd_toEndOf="@+id/displayEmailImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/displayPhone"
+        app:tint="@color/dark_gray"
+        android:contentDescription="@string/phone" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/lines"
+        app:layout_constraintTop_toBottomOf="@+id/displayType" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:text="@string/delete"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_800"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editButton" />
+
+    <Button
+        android:id="@+id/editButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="121dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:text="@string/edit"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_800"
+        android:textSize="14sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+ a. Assignment : Miterm.
+ b. File Name : forums_row_item.xml (layout/forums_row_item.xml).
+ c. Full name of the student : Mahalavanya Sriram.
+ -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/lines"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/forumsRowTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/forumsRowAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumsRowTitle" />
+
+    <TextView
+        android:id="@+id/forumsRowDesc"
+        android:layout_width="0dp"
+        android:padding="2dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumsRowAuthor" />
+
+    <TextView
+        android:id="@+id/forumsRowLikes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:padding="2dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/pipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pipe" />
+
+    <TextView
+        android:id="@+id/pipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:text="@string/pipe"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/forumsRowDate"
+        app:layout_constraintStart_toEndOf="@+id/forumsRowLikes"
+        app:layout_constraintTop_toTopOf="@+id/forumsRowDate" />
+
+    <TextView
+        android:id="@+id/forumsRowDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/forumsRowDeleteButton"
+        app:layout_constraintStart_toEndOf="@+id/pipe"
+        app:layout_constraintTop_toTopOf="@+id/forumsRowDeleteButton" />
+
+    <ImageButton
+        android:id="@+id/forumsRowDeleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/lforumsRowLikeButton"
+        app:layout_constraintEnd_toStartOf="@+id/lforumsRowLikeButton"
+        app:layout_constraintTop_toTopOf="@+id/lforumsRowLikeButton"
+        app:srcCompat="@drawable/ic_rubbish_bin" />
+
+    <ImageButton
+        android:id="@+id/lforumsRowLikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forumsRowDesc"
+        app:srcCompat="@drawable/ic_like_favorite" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

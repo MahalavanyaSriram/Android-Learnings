@@ -1,0 +1,45 @@
+<resources>
+    <!-- 
+     a. Assignment : #07.
+     b. File Name : strings.xml (values/strings.xml).
+     c. Full name of the student : Mahalavanya Sriram, Chandan Mannem.
+     -->
+    
+    <string name="app_name">Contacts</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_create">Create</string>
+    <string name="action_delete">Delete</string>
+    <string name="contact_detail">Contact Details</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Update</string>
+    <string name="cell">CELL</string>
+    <string name="home">HOME</string>
+    <string name="office">OFFICE</string>
+    <string name="name_hint">Enter Name</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="phone_hint">Enter Phone Number</string>
+    <string name="cancel">Cancel</string>
+    <string name="submit">Submit</string>
+    <string name="name_empty_error">Name cannot be empty</string>
+    <string name="email_empty_error">Email cannot be empty</string>
+    <string name="phone_empty_error">Phone Number cannot be empty</string>
+    <string name="name_valid_error">Please enter a valid name</string>
+    <string name="email_valid_error">Please enter a valid email</string>
+    <string name="close">Close</string>
+    <string name="update_contact">Update Contact</string>
+    <string name="create_contact">Create Contact</string>
+    <string name="delete_message">Are you sure you want to delete the contact ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error">Error</string>
+    <string name="contacts">Contacts</string>
+    <string name="delete_unsuccessful">Delete Unsuccessful !! Try Again....</string>
+    <string name="update_unsuccessful">Update Unsuccessful !! Try Again....</string>
+    <string name="create_unsuccessful">Create Unsuccessful !! Try Again....</string>
+    <string name="alert">alert</string>
+    <string name="empty_contact_list">"Your contact list is empty "</string>
+    <string name="click_create">Click Create</string>
+    <string name="person">person</string>
+    <string name="phone">phone</string>
+    <string name="email">email</string>
+</resources>
